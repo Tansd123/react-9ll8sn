@@ -10,8 +10,8 @@ export default function App() {
   }
   return (
     <>
-    <input type="number" onChange={e => Seta(e.target.value)}/>
-    <input type= "number" onChange={e => Setb(e.target.value)}/>
+    <input type="number" onChange={e => (Seta(e.target.value), setshow(false))}/>
+    <input type= "number" onChange={e => (Setb(e.target.value), setshow(false))}/>
     <button type= "button" onClick={() => setshow(!show)}>
      {show === true ? "Sended" : "Send" }
     </button>
